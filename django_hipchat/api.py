@@ -1,3 +1,4 @@
+import urllib
 import urllib2
 
 from django.template import Context
