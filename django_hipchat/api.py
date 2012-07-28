@@ -1,6 +1,7 @@
 import urllib
 import urllib2
 
+from django.conf import settings
 from django.template import Context
 from django.template.loader import render_to_string
 
@@ -54,6 +55,8 @@ def hipchat_message(template, context=None, fail_silently=False):
         return
 
     context = Context(context or {})
+
+    context['settings'] = settings
 
     def render(component):
         component_template = 'django_hipchat/%s' % component
