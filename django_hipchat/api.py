@@ -7,7 +7,7 @@ from django.template.loader import render_to_string
 
 from . import app_settings
 
-def hipchat_message(template, context=None, fail_silently=False):
+def hipchat_message(template, context=None, fail_silently=app_settings.FAIL_SILENTLY):
     """
 
      * Add ``django_hipchat`` to ``INSTALLED_APPS``
