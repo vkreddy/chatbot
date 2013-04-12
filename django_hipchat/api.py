@@ -6,6 +6,9 @@ from django.template import Context
 from django.template.loader import render_to_string
 
 from . import app_settings
+from .utils import from_dotted_path
+
+backend_fn = from_dotted_path(app_settings.BACKEND)
 
 def hipchat_message(template, context=None, fail_silently=app_settings.FAIL_SILENTLY):
     """
@@ -94,13 +97,7 @@ def hipchat_message(template, context=None, fail_silently=app_settings.FAIL_SILE
 
         assert False, "Missing or empty required parameter: %s" % x
 
-    request = urllib2.Request('%s?%s' % (
+    backend_fn('%s?%s' % (
         'https://api.hipchat.com/v1/rooms/message',
         urllib.urlencode(data),
-    ))
-
-    try:
-        urllib2.urlopen(request)
-    except Exception:
-        if not fail_silently:
-            raise
+    ), fail_silently)
