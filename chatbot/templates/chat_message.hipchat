@@ -1,0 +1,13 @@
+{% extends django_hipchat %}
+
+{% block room_id %}
+{% endblock %}
+
+{% block message %}
+	<p>Message</p>
+	<div><p>{{ trucks.start_time|date:"h:i A" }}</p></div>
+{% endblock %}
+
+{% block color %}
+ red
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends django_hipchat %}
+
+{% block room_id %}
+{% endblock %}
+
+{% block message %}
+	<html><body>
+        <p>Event starts at: </p>
+        <div><p>{{ trucks.start_time|date:"h:i A" }}</p></div>
+        <div><table><thead>List of Food Trucks</thead><tbody>
+        {% for name in trucks.truck_list %}
+                <tr><td>{{ name }}</td></tr>
+        {% endfor %}
+        </tbody></table></div>
+        </body></html>
+{% endblock %}
+
+{% block color %}
+ red
+{% endblock %}

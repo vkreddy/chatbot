@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		<h1> Wellcome to the Bot</h1>
+		<div>
+		<table><thead> Food Truck List</thead><tbody>
+		{% for name,feq in truck_list %}
+			<tr><td>{{ name }}</td><td>{{ feq }}</td></tr>
+		{% endfor %}
+		</tbody></table>
+		</div>
+	</body>
+</html>
