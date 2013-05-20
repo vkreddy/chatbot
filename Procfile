@@ -1,2 +1,2 @@
-web: gunicorn gb.wsgi -w 3
+web: gunicorn chatbot.wsgi -w 3
 celeryd: python manage.py celeryd -E -B --loglevel=INFO
