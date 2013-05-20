@@ -146,7 +146,7 @@ def one_time_loader(data):
                 except ValueError:
                         start_time = (datetime.datetime.strptime(event["start_time"],'%Y-%m-%d')).strftime("%Y-%m-%d %H:%M")
 
-		date = datetime.datetime.today() - relativedelta(month=1)
+		date = datetime.datetime.today() - relativedelta(months=1)
                 min_date = datetime.datetime.combine(date, datetime.time.min)
                 max_date = datetime.datetime.combine(datetime.datetime.today(), datetime.time.min)
 
