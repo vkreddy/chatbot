@@ -171,14 +171,14 @@ LOGIN_REDIRECT_URL = '/'
 import dj_database_url
 DATABASES = {
         'default':
-                dj_database_url.config(default='postgres://karthik:vkr090@localhost:5432/gb')
+                dj_database_url.config(default='postgres://localhost:5432/gb')
 }
 
 
 FACEBOOK_SCOPE = ['offline_access']                   # application scopes
 FACEBOOK_APP_ID = '526627504062453'                               # application ID
 FACEBOOK_APP_SECRET = '717a266c7a394c229c46adc91bcb4e8c'                           # application secret key
-FACEBOOK_ACCESS_TOKEN = 'CAACEdEose0cBAERLwUda5GoaD115u1ZC72rJtlRSxp36scVe8KEUy59aDZBruWjTAZAe7Tiqfg0nxpZCXPoG4At9wwWNFarkQAHC7H1qN9dmvSZAIzP20lEKovRbVmhFp0MxHUqaOj74qCnZCcZB4MKU4d6bMblksaa5ZClQV62vfQZDZD'
+FACEBOOK_ACCESS_TOKEN = 'CAACEdEose0cBAF8Y3LRbafhU7Porbtb9f9ZCWHblGH7YA1QLCRQkEF9NINK5g3MYtoIGijFZBC2A44UslwfUJbiaWbXpYHmjCRu6hOXovuRMBPBlTgm5muxe2JZAmqshwcShyBkejuoNxawuJmFE7Taebv4HGGqZCz2TSy8ZAoQZDZD'
 
 # HipChat credentials
 HIPCHAT_MESSAGE_ROOM = 'Karthik Project'
@@ -188,7 +188,7 @@ HIPCHAT_MESSAGE_FROM = 'Food Bot'
 # Celery details
 #BROKER_BACKEND = "djkombu.transport.DatabaseTransport"
 #BROKER_BACKEND = "django"
-BROKER_URL = "django://guest:guest@localhost:5672//"
+BROKER_URL = "django://"
 
 from celery.schedules import crontab
 
