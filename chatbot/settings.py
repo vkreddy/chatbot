@@ -178,7 +178,7 @@ DATABASES = {
 FACEBOOK_SCOPE = ['offline_access']                   # application scopes
 FACEBOOK_APP_ID = '526627504062453'                               # application ID
 FACEBOOK_APP_SECRET = '717a266c7a394c229c46adc91bcb4e8c'                           # application secret key
-FACEBOOK_ACCESS_TOKEN = 'CAACEdEose0cBAF8Y3LRbafhU7Porbtb9f9ZCWHblGH7YA1QLCRQkEF9NINK5g3MYtoIGijFZBC2A44UslwfUJbiaWbXpYHmjCRu6hOXovuRMBPBlTgm5muxe2JZAmqshwcShyBkejuoNxawuJmFE7Taebv4HGGqZCz2TSy8ZAoQZDZD'
+FACEBOOK_ACCESS_TOKEN = 'CAACEdEose0cBACfAxRMaO6EDSfJi9bUamLmCfvceFNdPR0S9HQExyOZCGlwXJaiwEsKRadZCNIfgwbd09kK2vrDtcJdjszL20En0GgTV2T1gKoGFKC8tCu2ikN9vWv5mF2QeOAza04LnljIhtypfwRJvZA1ZA5iWzIwzflzZBFQZDZD'
 
 # HipChat credentials
 HIPCHAT_MESSAGE_ROOM = 'Karthik Project'
