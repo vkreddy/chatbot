@@ -10,7 +10,6 @@ from bot.models import *
 from bot.tasks import *
 
 import requests
-import facebook
 import urllib
 import urlparse
 import json
