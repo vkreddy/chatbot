@@ -176,13 +176,13 @@ DATABASES = {
 
 
 FACEBOOK_SCOPE = ['offline_access']                   # application scopes
-FACEBOOK_APP_ID = '526627504062453'                               # application ID
-FACEBOOK_APP_SECRET = '717a266c7a394c229c46adc91bcb4e8c'                           # application secret key
-FACEBOOK_ACCESS_TOKEN = 'CAACEdEose0cBACfAxRMaO6EDSfJi9bUamLmCfvceFNdPR0S9HQExyOZCGlwXJaiwEsKRadZCNIfgwbd09kK2vrDtcJdjszL20En0GgTV2T1gKoGFKC8tCu2ikN9vWv5mF2QeOAza04LnljIhtypfwRJvZA1ZA5iWzIwzflzZBFQZDZD'
+FACEBOOK_APP_ID = ''                               # application ID
+FACEBOOK_APP_SECRET = ''                           # application secret key
+FACEBOOK_ACCESS_TOKEN = ''
 
 # HipChat credentials
 HIPCHAT_MESSAGE_ROOM = 'Karthik Project'
-HIPCHAT_AUTH_TOKEN = '2c637806f4c031e35006882b9f5240'
+HIPCHAT_AUTH_TOKEN = ''
 HIPCHAT_MESSAGE_FROM = 'Food Bot'
 
 # Celery details
